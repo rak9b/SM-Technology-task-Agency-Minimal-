@@ -1,0 +1,13 @@
+@import './tailwind.css';
+@import url('https://fonts.googleapis.com/css2?family=Pacifico:wght@400&family=DM+Sans:wght@400;700&family=Roboto:wght@400&family=Heebo:wght@400&display=swap');
+
+body {
+  font-family: 'DM Sans', 'Roboto', 'Heebo', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}

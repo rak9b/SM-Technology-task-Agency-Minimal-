@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Global Colors */
+    --global-bg-1: #01091833;
+    --global-bg-2: #8d448b;
+    --global-bg-3: #f0faff;
+    --global-bg-4: #f0fbff;
+    --global-bg-5: #f7fafc;
+    --global-bg-6: #ffffff;
+    --global-text-1: #02073e;
+    --global-text-2: #02073e66;
+    --global-text-3: #02073e99;
+    --global-text-4: #0f2136;
+    --global-text-5: #0f213699;
+    --global-text-6: #343d48;
+    --global-text-7: #343d48cc;
+    --global-text-8: #56627299;
+    --global-text-9: #8d448b;
+    --global-text-10: #ffffff;
+
+    /* Header Colors */
+    --header-text-1: #02073ecc;
+
+    /* Button Colors */
+    --button-bg-1: #f9fbfd;
+  }
+
+  * {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply w-full max-w-[1290px] mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+
+  .heading-primary {
+    @apply text-[32px] sm:text-[40px] md:text-[48px] lg:text-[64px] font-dm-sans font-bold leading-[40px] sm:leading-[50px] md:leading-[60px] lg:leading-[80px];
+  }
+
+  .heading-secondary {
+    @apply text-[24px] md:text-[30px] lg:text-[48px] font-dm-sans font-bold leading-[32px] md:leading-[40px] lg:leading-[60px];
+  }
+
+  .body-text {
+    @apply text-[14px] sm:text-[16px] md:text-[18px] font-dm-sans font-normal leading-[28px] sm:leading-[35px] md:leading-[42px];
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+
+  .fade-in {
+    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+  }
+
+  .fade-in-visible {
+    @apply opacity-100 translate-y-0;
+  }
+}
+
+@layer utilities {
+  /* Global */
+  .bg-global-1 {
+    background-color: var(--global-bg-1);
+  }
+  .bg-global-2 {
+    background-color: var(--global-bg-2);
+  }
+  .bg-global-3 {
+    background-color: var(--global-bg-3);
+  }
+  .bg-global-4 {
+    background-color: var(--global-bg-4);
+  }
+  .bg-global-5 {
+    background-color: var(--global-bg-5);
+  }
+  .bg-global-6 {
+    background-color: var(--global-bg-6);
+  }
+  .text-global-1 {
+    color: var(--global-text-1);
+  }
+  .text-global-2 {
+    color: var(--global-text-2);
+  }
+  .text-global-3 {
+    color: var(--global-text-3);
+  }
+  .text-global-4 {
+    color: var(--global-text-4);
+  }
+  .text-global-5 {
+    color: var(--global-text-5);
+  }
+  .text-global-6 {
+    color: var(--global-text-6);
+  }
+  .text-global-7 {
+    color: var(--global-text-7);
+  }
+  .text-global-8 {
+    color: var(--global-text-8);
+  }
+  .text-global-9 {
+    color: var(--global-text-9);
+  }
+  .text-global-10 {
+    color: var(--global-text-10);
+  }
+
+  /* Header */
+  .text-header-1 {
+    color: var(--header-text-1);
+  }
+
+  /* Button */
+  .bg-button-1 {
+    background-color: var(--button-bg-1);
+  }
+
+  /* Custom gradients */
+  .gradient-yellow {
+    background: linear-gradient(323deg, #ffcc40 0%, #ffcc407f 100%);
+  }
+
+  .gradient-cyan {
+    background: linear-gradient(320deg, #25d9d9 0%, #25d9d97f 100%);
+  }
+
+  .gradient-blue {
+    background: linear-gradient(319deg, #0898e7 0%, #0898e77f 100%);
+  }
+
+  .gradient-orange {
+    background: linear-gradient(322deg, #ff9066 0%, #ff90667f 100%);
+  }
+}
